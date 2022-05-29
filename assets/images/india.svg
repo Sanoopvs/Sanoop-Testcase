@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="Group_2" data-name="Group 2" transform="translate(743 -13304)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="17" height="17" transform="translate(-743 13304)" fill="none"/>
+    <g id="india" transform="translate(-1592 13261)">
+      <path id="Ellipse_11" data-name="Ellipse 11" d="M16.61,8.305A8.305,8.305,0,1,1,8.305,0,8.305,8.305,0,0,1,16.61,8.305Z" transform="translate(849 43)" fill="#f0f0f0"/>
+      <path id="Path_234" data-name="Path 234" d="M7.581,0A8.414,8.414,0,0,0,0,4.755H15.159A8.414,8.414,0,0,0,7.581,0Z" transform="translate(849.833 43.004)" fill="#ff9811"/>
+      <path id="Path_235" data-name="Path 235" d="M7.581,4.756a8.414,8.414,0,0,0,4.474-1.287A8.414,8.414,0,0,0,15.16,0H0A8.414,8.414,0,0,0,3.106,3.469,8.414,8.414,0,0,0,7.581,4.756Z" transform="translate(849.833 55.075)" fill="#6da544"/>
+      <path id="Ellipse_12" data-name="Ellipse 12" d="M5.853,2.927A2.927,2.927,0,1,1,2.927,0,2.927,2.927,0,0,1,5.853,2.927Z" transform="translate(854.487 48.491)" fill="#0052b4"/>
+      <path id="Ellipse_13" data-name="Ellipse 13" d="M3.658,1.829A1.829,1.829,0,1,1,1.829,0,1.829,1.829,0,0,1,3.658,1.829Z" transform="translate(855.585 49.588)" fill="#f0f0f0"/>
+      <path id="Path_236" data-name="Path 236" d="M1.954,0l.564,1.28,1.39-.151L3.082,2.257l.826,1.129-1.39-.151-.564,1.28L1.39,3.235,0,3.386.826,2.257,0,1.129l1.39.151Z" transform="translate(855.46 49.16)" fill="#0052b4"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+
+// home banner section start
+.bei-digital-ban {
+   position: relative;
+   &__bg {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+   }
+   &__wrapper {
+      position: relative;
+   }
+   &__outer {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__sec1 {
+      width: 50%;
+      padding: 60px 0;
+   }
+   &__sec2 {
+      transform: translateY(24px);
+      margin-left: 24px;
+      width: 50%;
+      position: relative;
+      box-shadow: 11px 30px 38px  rgba(43, 98, 136, 0.20%);
+   }
+   &__head {
+      font-size: 34px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+   }
+   &__desc {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 16px;
+   }
+   &__btn-outer {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+   }
+   &__demo-btn {
+      min-width: 160px;
+      background-color: #04BBF2;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 16px;
+      display: inline-block;
+      margin: 8px 16px;
+      svg {
+         width: 14px;
+         height: 14px;
+         margin-left: 4px;
+         transition: all 0.3s;
+      }
+      &:hover {
+         color: #fff;
+         svg {
+            transform: translateX(3px);
+         transition: all 0.3s;
+         }
+      }
+   }
+   &__chat-btn {
+      color: #04BBF2;
+      font-size: 16px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      transition: 0.3s;
+      svg {
+         width: 18px;
+         height: 15px;
+         margin-right: 8px;
+      }
+      &:hover{
+         color: #04BBF2;
+         svg {
+            transform: scale(1.1);
+         }
+      }
+   }
+   &__video {
+      width: 100%;
+   }
+   &__thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+   }
+   &__video-frame {
+      width: 100%;
+      min-height: 300px;
+      max-height: 300px;
+   }
+   // &__video  {
+   //    max-width: 600px;
+   //    width: 100%;
+   // }
+}
+// banner section end
+
+@include mobile-tablet {
+// banner section start
+.bei-digital-ban {
+   &__outer {
+      display: block;
+   }
+   &__sec1 {
+      width: 100%;
+      padding: 24px 0;
+   }
+   &__sec2 {
+      margin-left: 0;
+      width: 100%;
+   }
+   &__head {
+      font-size: 26px;
+   }
+}
+}
+

@@ -1,0 +1,32 @@
+.bei-head-with-smalltxt {
+  display: inline-block;
+  color: $color-white;
+  // overflow: hidden;
+  &__smalhead {
+    text-transform: uppercase;
+    display: flex;
+  }
+  &__line {
+    background-color: $color-white;
+    height: 1px;
+    width: 100%;
+    margin: auto 0;
+  }
+  &__subtxt {
+    white-space: nowrap;
+    padding-right: $spacer-3;
+  }
+  &__head {
+    font-size: 28px;
+    font-weight: $font-semi-bold;
+    margin: $spacer-3 $spacer-0 $spacer-4;
+  }
+  &--blue {
+  color: $color-blue;
+  .bei-head-with-smalltxt {
+    &__line {
+      background-color: $color-blue;
+    }
+  }
+  }
+}

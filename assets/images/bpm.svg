@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32.5" viewBox="0 0 32 32.5">
+  <g id="Group_1" data-name="Group 1" transform="translate(2704 -12340)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="32" height="32" transform="translate(-2704 12340)" fill="none"/>
+    <g id="Group" transform="translate(-3308 9767)">
+      <path id="Vector" d="M10.632,1.684V15.368H7.053V9.158L0,2.105a6.155,6.155,0,0,0,2,.421H3.579L7.158,6.105V.737A6.017,6.017,0,0,1,8,0,11.761,11.761,0,0,0,10.632,1.684Z" transform="translate(612.579 2589.632)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-2" data-name="Vector" d="M22,11.263a5.5,5.5,0,0,1-5.474,5.474,4.936,4.936,0,0,1-2.316-.421,11.705,11.705,0,0,1-2.737-1.789c-.316.316-.632.526-.842.737-1.474,1.263-2.316,1.789-3.579,1.895H5.474a6.155,6.155,0,0,1-2-.421A5.481,5.481,0,0,1,0,11.789,5.392,5.392,0,0,1,4.947,6.421V5.895a5.895,5.895,0,1,1,11.789,0A5.3,5.3,0,0,1,22,11.263Z" transform="translate(609 2575)" fill="none" stroke="#04bbf2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

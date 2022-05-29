@@ -1,0 +1,210 @@
+
+
+// stories mod start
+.bei-stories {
+    background-color: #fff;
+    &__wrapper {
+        padding: 60px $spacer-0;
+    }
+    &__sec1 {
+        display: flex;
+    }
+    &__sec2 {
+        width: 60%;
+        margin-left: auto;
+    }
+    &__small-hed {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-right: 24px;
+        color: $color-blue;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 150px;
+            height: 1px;
+            background-color: $color-blue;
+        }
+    }
+    &__head {
+        font-size: 28px;
+        font-weight: 500;
+        color: $color-blue;
+        margin: $spacer-3 $spacer-0;
+    }
+    &__desc {
+        font-size: 16px;
+        color: #666666;
+    }
+    &__inner2 {
+        margin-left: auto;
+    }
+    &__slider-arrow-outer {
+        margin-left: auto;
+        display: flex;
+        margin-bottom: $spacer-4;
+    }
+    &__slider-arrow {
+        width: 24px;
+        height: 24px;
+        background-color: $color-blue;
+        position: relative;
+        cursor: pointer;
+        &--prev,&--next {
+            &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 12px;
+            height: 12px;
+            }
+        }
+        &--prev {
+            margin-right: 10px;
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.982' height='12.625' viewBox='0 0 8.982 12.625'%3E%3Cpath id='Vector_49' data-name='Vector 49' d='M6.769,0,0,5.538l6.769,5.538' transform='translate(1.579 0.774)' fill='%2310385b' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E%0A");
+            }
+        }
+        &--next {
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.982' height='12.625' viewBox='0 0 8.982 12.625'%3E%3Cg id='Vector_49' data-name='Vector 49' transform='translate(0.633 0.774)'%3E%3Cpath id='Vector_49-2' data-name='Vector 49' d='M6.769,0,0-5.538l6.769-5.538' transform='translate(6.769) rotate(180)' fill='%2310385b' stroke='%23fff' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+    &__slider-nav {
+        margin: $spacer-0 (-$spacer-4);
+    }
+    &__slider-active-arw {
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid #F1F5F8;
+        width: 0;
+        height: 0;
+        margin: $spacer-4 auto $spacer-0;
+        opacity: 0;
+    }
+    &__story-slider-outer {
+        margin-top: -16px;
+    }
+    &__slider-nav-item {
+        font-size: 16px;
+        color: $color-grey;
+        margin: $spacer-0 $spacer-4;
+        font-weight: $font-light;
+        &.slick-current.slick-active {
+            color: $color-blue;
+            font-weight: $font-semi-bold;
+            .bei-stories__slider-active-arw {
+                opacity: 1;
+            }
+        }
+    }
+    &__slider-nav-item-txt {
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    // &__story-slider {
+    //     display: flex;
+    //     align-items: center;
+    // }
+    &__story-slider-for {
+        display: flex;
+    }
+    &__story-slider-img-item {
+        width: 40%;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+    }
+    &__story-slider-cont {
+        width: 60%;
+        background-color: #F1F5F8;
+        padding: $spacer-4 $spacer-6;
+        margin: $spacer-3 $spacer-0;
+    }
+    &__story-slider-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__slider-subhed {
+        font-size: 18px;
+        color: $color-blue;
+        font-weight: $font-semi-bold;
+        margin-bottom: $spacer-3;
+    }
+    &__slider-desc {
+        font-size: 16px;
+        color:  #707070;
+    }
+    &__story-slider-btn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: $spacer-6;
+    }
+    .bei-btns {
+        margin: $spacer-0;
+    }
+    &__compny-txt {
+        font-size: 12px;
+        color: #AEB7BE;
+        text-transform: uppercase;
+        font-weight: $font-bold;
+    }
+    &__story-slider-outer {
+        .slick-initialized .slick-slide {
+            display: flex;
+        }
+    }
+    
+}
+
+// stories mod end
+
+@include mobile-tablet {
+    .bei-stories {
+        &__story-slider-for {
+            flex-direction: column-reverse;
+        }
+        &__story-slider-img-item,
+        &__story-slider-cont,
+        &__sec2
+         {
+            width: 100%;
+        }
+        &__story-slider-cont {
+            margin-bottom: $spacer-0;
+        }
+    }
+}
+
+@include mobile {
+    .bei-stories {
+        &__sec1 {
+            align-items: flex-end;
+        }
+        padding-top: $spacer-6;
+        &__wrapper {
+            padding: $spacer-4 $spacer-0;
+        }
+        &__story-slider-cont {
+            padding: $spacer-4;
+        }
+        &__story-slider-btn {
+            margin-top: $spacer-4;
+        }
+    }
+}

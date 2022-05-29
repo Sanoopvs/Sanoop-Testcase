@@ -1,0 +1,162 @@
+
+// main nav start
+
+.bei-header {
+   background-color: #fff;
+   width: 100%;
+   padding: 15px 0;
+   border-bottom: 2px solid #F5F5F5;
+   &__logo {
+      width: 150px;
+      height: 28px;
+   }
+   .container-fluid{
+      padding: $spacer-0;
+  }
+  .navbar-brand{
+      padding: $spacer-0;
+      margin: $spacer-0;
+  }
+  .navbar-expand-lg .navbar-collapse{
+      justify-content: end;
+      margin-left: $spacer-3;
+  }
+  &__nav-link{
+      font-size: 14px;
+      color: $color-blue;
+      margin: 0 12px;
+      transition: all .3s;
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         bottom: -3px;
+         left: 0;
+         height: 2px;
+         width: 0;
+         // max-width: 0;
+         background: $color-blue;
+         // transform: scaleX(0);
+         transform-origin: right;
+         transition: transform .3s linear; 
+      }
+      &:hover {
+         color: $color-blue-1;
+      }
+    //   &.active{
+    //       color: $color-blue-1;
+    //   } 
+  }
+  
+  &.sticky {
+      position: fixed;
+      padding: 0;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      animation: header-slide .3s linear forwards;
+      background-color: $color-white;
+      &:after {
+          content: none;
+      }
+      .navbar-toggler {
+          margin-top: $spacer-2;
+      }
+      .bei-header__logo {
+          width: 120px;
+      }
+      
+  }
+  .navbar-toggler {
+      padding: $spacer-0;
+      &:focus {
+          box-shadow: none;
+      }
+  }
+  &__fade {
+      display: none;
+  }
+  &__close {
+      display: none;
+  }
+}
+
+// main header end
+
+@include mobile-tablet {
+// main header start
+
+.bei-header{
+   &__logo {
+      width: 100px;
+      height: auto;
+   }
+   &__nav-item {
+      margin-bottom: $spacer-3;
+   }
+   &__fade {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all .3s;
+  }
+  &__navbar{
+      padding: $spacer-2 $spacer-0;
+      .navbar-collapse {
+         z-index: 999;
+          .navbar-nav {
+              position: fixed;
+              top: 0;
+              left: 0;
+              background-color: $color-white;
+              width: 50%;
+              min-width: 280px;
+              padding: $spacer-3;
+              height: 100vh;
+              margin-left: 0;
+              transform: translateX(-270px);
+              transition: all .3s;
+              opacity: 0;
+          }
+          .igc-header__close {
+              display: block;
+              position: absolute;
+              top: 0;
+              // left: 95%;
+              right: 16px;
+              margin-top: $spacer-3;
+              // transform: translateX(-350px);
+              opacity: 1;
+              transition: all .5s;
+          }
+          &.show {
+              .navbar-nav {
+                  transform: translateX(0px);
+                  opacity: 1;
+              }
+              
+          }
+      }
+  }
+}
+
+// main header end
+
+
+}
+
+@keyframes header-slide {
+   0% {
+       opacity: .5;
+       transform: translateY(-100%);
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+

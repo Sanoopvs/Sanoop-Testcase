@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>BEINEX</title>
+</head>
+
+<body>
+<!-- home banner start -->
+<div class="bei-digital-ban">
+<div style="background-image: url(../assets/images/main-banner.png)" class="bei-digital-ban__bg"></div>
+<div class="content-wrapper">
+  <div class="bei-digital-ban__wrapper">
+      <div class="bei-digital-ban__outer">
+          <div class="bei-digital-ban__sec1">
+              <h1 class="bei-digital-ban__head">Digital transformation gains heightened significance</h1>
+              <p class="bei-digital-ban__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum cras erat ut risus.</p>
+              <div class="bei-digital-ban__btn-outer">
+                <a href="#" class="bei-btns">
+                  Request a demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                      <g id="Group_5" data-name="Group 5" transform="translate(-219.5 -333.5)">
+                        <g id="Group_3" data-name="Group 3">
+                          <g id="Group_2" data-name="Group 2">
+                            <g id="Group_1" data-name="Group 1">
+                              <path id="Vector" d="M2.133,1.968A6.987,6.987,0,1,1,.519,4.35" transform="translate(220 334)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                              <path id="Vector-2" data-name="Vector" d="M0,2.5v3.01L4.15,2.478,0,0" transform="translate(225.718 338.24)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>             
+              </a>
+              <a href="#" class="bei-btns">
+                Explore now
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <g id="Group_1" data-name="Group 1" transform="translate(7217.5 -11654.5)">
+                    <path id="Vector" d="M2.133,1.968A6.987,6.987,0,1,1,.519,4.35" transform="translate(-7217 11655)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    <g id="Grzoup_6" data-name="Group 6" transform="translate(-7647 11322)">
+                      <path id="Vector_5" data-name="Vector 5" d="M0,0,1.828,2.193,0,4.021" transform="translate(438.172 338)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                      <path id="Vector_4" data-name="Vector 4" d="M0,0H5.483" transform="translate(434 340.193)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                    </g>
+                  </g>
+                </svg>           
+            </a>
+              </div>
+              <a href="#" class="bei-digital-ban__chat-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19.875" height="16.01" viewBox="0 0 19.875 16.01">
+                      <path id="Vector" d="M9.005,0C4.034,0,0-2.973,0-6.645a6.1,6.1,0,0,1,3.215-5.073c-.1-.162-.208-.33-.328-.507A8.3,8.3,0,0,0,0-14.716a8.613,8.613,0,0,1,5.164.243,8.235,8.235,0,0,1,2.267,1.294,12.308,12.308,0,0,1,1.563-.112C13.972-13.29,18-10.313,18-6.64S13.982,0,9.005,0Z" transform="translate(18.5 0.5) rotate(180)" fill="none" stroke="#04bbf2" stroke-width="1"/>
+                    </svg>
+                    Click to chat                      
+              </a>
+          </div>
+          <div class="bei-digital-ban__sec2">
+            <div class="bei-digital-ban__video">
+              <img src="../assets/images/video-thumb.png" alt="" class="bei-digital-ban__thumb">
+              <iframe width="100%" src="https://www.youtube.com/embed/BhEWkcyXYwg" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="bei-digital-ban__video-frame"></iframe>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- home banner end -->
+
+    <!-- JS -->
+    <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  <script>
+    $(".bei-digital-ban__thumb ").on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().find(".bei-digital-ban__video-frame")[0].src += "?autoplay=1 ";
+    $(this).parent().find(".bei-digital-ban__video-frame").show();
+    $(this).parent().find(".bei-digital-ban__thumb ").hide();
+    $(this).hide();
+});
+  </script>
+</body>
+
+</html>

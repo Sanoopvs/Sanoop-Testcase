@@ -1,0 +1,24 @@
+//base
+@import "base/break-point";
+@import "base/font-variables";
+@import "base/layout";
+@import "base/reset";
+@import "base/color";
+@import "base/base";
+
+//atom
+@import "atom/buttons"; 
+@import "atom/headings"; 
+
+//molecules
+
+//organisms
+@import "organisms/igc-header";
+@import "organisms/header";
+@import "organisms/stories";
+@import "organisms/home-banner";
+@import "organisms/bei-footer";
+@import "organisms/country-details";
+@import "organisms/subscribe-banner";
+@import "organisms/request-form";
+@import "organisms/our-verticals";

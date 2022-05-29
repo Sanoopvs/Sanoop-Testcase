@@ -1,0 +1,79 @@
+// footer start
+
+.bei-footer {
+    background-color: $color-blue-3;
+    padding-top: 120px;
+    position: relative;
+    &__wrapper {
+        padding-bottom: $spacer-5;
+    }
+    &__quick-link-outer,
+    &__social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        justify-content: center;
+        padding-bottom: $spacer-4;
+    }
+    &__quick-link {
+        color: $color-white;
+        font-weight: $font-regular;
+        padding: $spacer-2 $spacer-6;
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 1px;
+            height: 20px;
+            background: rgba(255,255,255, 0.6%);
+        }
+        &:first-of-type {
+            &::before {
+                content: none;
+            }
+        }
+    }
+    &__social-icons {
+        padding-bottom: $spacer-6;
+    }
+    &__social-link {
+        margin-right: $spacer-4;
+        &:last-of-type {
+        margin-right: $spacer-0;
+        }
+        &:hover {
+            .bei-footer__social-img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__social-img {
+        width: 20px;
+        height: 20px;
+        transition: 0.3s;
+    }
+    &__copy-txt {
+        text-align: center;
+        color: #A19EAA;
+    }
+
+}
+
+@include mobile {
+    .bei-footer {
+        &__wrapper {
+            padding-bottom: $spacer-4;
+        }
+        &__quick-link {
+            padding: $spacer-2 $spacer-4;
+        }
+        &__social-icons {
+            padding-bottom: $spacer-5;
+        } 
+    }
+}
+// footer end
